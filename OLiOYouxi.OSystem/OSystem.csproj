@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3CE2DDB-4409-46D4-8133-F33066EE28E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OLiOYouxi.OSystem</RootNamespace>
+    <AssemblyName>OLiOYouxi.OSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\OLiOYouxi.OSystem.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Internals\EnumCentre.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publics\CameraFather.cs" />
+    <Compile Include="Publics\DebugFather.cs" />
+    <Compile Include="Publics\CoroutineFather.cs" />
+    <Compile Include="Publics\OList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\ExCSS.Unity.dll" />
+    <Content Include="Library\nunit.framework.dll" />
+    <Content Include="Library\Unity.Cecil.dll" />
+    <Content Include="Library\Unity.Cecil.Mdb.dll" />
+    <Content Include="Library\Unity.Cecil.Pdb.dll" />
+    <Content Include="Library\Unity.Cecil.Rocks.dll" />
+    <Content Include="Library\Unity.CecilTools.dll" />
+    <Content Include="Library\Unity.DataContract.dll" />
+    <Content Include="Library\Unity.IvyParser.dll" />
+    <Content Include="Library\Unity.IvyParser.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\Unity.Legacy.NRefactory.dll" />
+    <Content Include="Library\Unity.Locator.dll" />
+    <Content Include="Library\Unity.Locator.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\Unity.SerializationLogic.dll" />
+    <Content Include="Library\Unity.UNetWeaver.dll" />
+    <Content Include="Library\Unity.UNetWeaver.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEditor.dll" />
+    <Content Include="Library\UnityEditor.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEditor.Graphs.dll" />
+    <Content Include="Library\UnityEditor.Graphs.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEditor.xml" />
+    <Content Include="Library\UnityEngine.dll" />
+    <Content Include="Library\UnityEngine.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.AccessibilityModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.AccessibilityModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AIModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.AIModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AnimationModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.AnimationModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AnimationModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.ARModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ARModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AssetBundleModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.AssetBundleModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AssetBundleModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.AudioModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.AudioModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.AudioModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.BaselibModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.BaselibModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ClothModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ClothModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ClusterInputModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ClusterInputModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ClusterInputModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.ClusterRendererModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ClusterRendererModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.CoreModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.CoreModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.CoreModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.CrashReportingModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.CrashReportingModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.DirectorModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.DirectorModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.FileSystemHttpModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.FileSystemHttpModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.GameCenterModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.GameCenterModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.GridModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.GridModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.GridModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.HotReloadModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.HotReloadModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ImageConversionModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ImageConversionModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ImageConversionModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.IMGUIModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.IMGUIModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.IMGUIModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.InputModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.InputModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.InputModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.JSONSerializeModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.JSONSerializeModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.JSONSerializeModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.LocalizationModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.LocalizationModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ParticleSystemModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ParticleSystemModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.PerformanceReportingModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.PerformanceReportingModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.Physics2DModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.Physics2DModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.Physics2DModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.PhysicsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.PhysicsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.PhysicsModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.ProfilerModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ProfilerModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.ScreenCaptureModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.ScreenCaptureModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.SharedInternalsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.SharedInternalsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.SharedInternalsModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.SpatialTrackingModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.SpatialTrackingModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.SpriteMaskModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.SpriteMaskModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.SpriteShapeModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.SpriteShapeModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.StreamingModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.StreamingModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.StyleSheetsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.StyleSheetsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.StyleSheetsModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.SubstanceModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.SubstanceModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TerrainModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TerrainModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TerrainModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.TerrainPhysicsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TerrainPhysicsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TextCoreModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TextCoreModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TextRenderingModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TextRenderingModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TextRenderingModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.TilemapModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TilemapModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TimelineModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TimelineModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.TLSModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.TLSModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UIElementsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UIElementsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UIModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UIModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UmbraModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UmbraModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UNETModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UNETModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UNETModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityAnalyticsModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityAnalyticsModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityAnalyticsModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityConnectModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityConnectModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityConnectModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityTestProtocolModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityTestProtocolModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestAudioModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.VehiclesModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.VehiclesModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.VFXModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.VFXModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.VideoModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.VideoModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.VideoModule.xml" />
+    <Content Include="Library\UnityEngine\UnityEngine.VRModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.VRModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.WindModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.WindModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.XRModule.dll" />
+    <Content Include="Library\UnityEngine\UnityEngine.XRModule.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\UnityEngine\UnityEngine.XRModule.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
